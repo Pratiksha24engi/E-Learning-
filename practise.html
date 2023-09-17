@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+    <script>
+       function add(){
+        var a =document.getElementById("mat").value;
+        var b=document.getElementById("eng").value;
+        var c=document.getElementById("sc").value;
+        var d=Number(a)+Number(b)+Number(c);
+        var e=d/3;
+        var col=" ";
+        document.getElementById("dv").innerHTML="Total="+d;
+        document.getElementById("dv1").innerHTML="Percentage="+e+"%";
+
+        if(e>35){
+            document.getElementById("dv2").innerHTML="pass";
+            col="green";
+        }
+        else{
+            document.getElementById("dv2").innerHTML="fail";
+            col="red";
+        }
+        document.getElementById("dv2").style.color=col;
+       }
+    </script>
+    <title></title>
+</head>
+
+<body>
+    Maths:<input type="text"id="mat"><br><Br>
+    English:<input type="text"id="eng"><br><Br>
+        Science:<input type="text"id="sc"><br><br>
+        <input type="button"value="submit"onclick="add()">
+        <div id="dv"></div>
+        <div id="dv1"></div>
+        <div id="dv2"></div>
+
+
+</body>
+
+</html>

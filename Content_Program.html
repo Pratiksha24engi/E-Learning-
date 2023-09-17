@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="css/jquery.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-row-reverse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+      <div class="col-auto col-xl-3 px-0 bg-dark">
+        <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+          <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <span class="fs-5 d-none d-sm-inline">Student Section</span>
+          </a>
+
+          <div class="list-group col-xl-12">
+            <a href="sidebar.html" class="list-group-item list-group-item-action">Dashboard </a>
+            <a href="all_studant.html" class="list-group-item list-group-item-action">All Student </a>
+            <a href="all_Exam.html" class="list-group-item list-group-item-action">All Exam </a>
+          </div>
+          <hr class="active">
+
+          <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <span class="fs-5 d-none d-sm-inline">Master Section</span>
+          </a>
+          <div class="list-group col-xl-12">
+            <a href="Content_Question.html" class="list-group-item list-group-item-action ">Content Question</a>
+            <a href="Content_Program.html" class="list-group-item list-group-item-action">Content Program</a>
+            <a href="Interview_Question.html" class="list-group-item list-group-item-action">Interview Question</a>
+            <a href="#" class="list-group-item list-group-item-action">Question Level</a>
+            <a href="#" class="list-group-item list-group-item-action">Role</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="col py-3">
+        <div class="col-md-12">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h4>Add Program</h4>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Select Topic</label>
+                    <select id="ddtopic" class="form-control">
+                      <option selected="" disabled="">Select Topic</option>
+                      <option value="1">Core Java</option>
+                      <option value="2">Jsp</option>
+                      <option value="3">JDBC</option>
+                      <option value="4">Hibernate</option>
+                      <option value="5">Spring MVC Framework</option>
+                      <option value="6">Spring Boot</option>
+                      <option value="7">C-Sharp</option>
+                      <option value="8">ADO.NET</option>
+                      <option value="9">Asp.Net MVC</option>
+                      <option value="10">LINQ</option>
+                      <option value="11">Entity Framework</option>
+                      <option value="12">.NET Core MVC</option>
+                      <option value="13">.NET Core Web Apis</option>
+                      <option value="14">Html</option>
+                      <option value="15">CSS</option>
+                      <option value="16">JavaScript</option>
+                      <option value="17">JQuery</option>
+                      <option value="18">Bootstrap 5</option>
+                      <option value="19">Bootstrap 3</option>
+                      <option value="20">Angular</option>
+                      <option value="21">Angular Ionic</option>
+                      <option value="22">ReactJs</option>
+                      <option value="23">React Native</option>
+                      <option value="25">Core Python</option>
+                      <option value="26">Advance Python</option>
+                      <option value="27">Numpy</option>
+                      <option value="28">Pandas</option>
+                      <option value="29">Matplotlib</option>
+                      <option value="30">DJango</option>
+                      <option value="31">Machine Learning And Artificial Intelligence</option>
+                      <option value="32">Oracle SQL</option>
+                      <option value="33">MS Sql Server</option>
+                      <option value="34">MySql</option>
+                      <option value="35">MongoDB</option>
+                      <option value="36">C Language</option>
+                      <option value="37">CPP Language</option>
+                      <option value="38">Data Structure</option>
+                      <option value="39">Typescript</option>
+                      <option value="40">Redux</option>
+                      <option value="41">Manual Testing</option>
+                      <option value="42">Automation Testing - Selenium Web Driver</option>
+                      <option value="43">GitHub</option>
+                      <option value="44">Jenkins</option>
+                      <option value="45">Apache Jmeter</option>
+                      <option value="46">Jira</option>
+                      <option value="47">PostMan</option>
+                      <option value="48">Servlet</option>
+                      <option value="49">react</option>
+                    </select>
+                  </div>
+
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Select Content</label>
+                    <select id="ddcontent" class="form-control">
+                      <option selected="" disabled="">Select Content</option>
+                      <option value="1">Introduction</option>
+                      <option value="2">OOPS Concepts</option>
+                      <option value="3">Java Execution</option>
+                      <option value="4">Operators</option>
+                      <option value="5">Data Types</option>
+                      <option value="6">If Else</option>
+                      <option value="7">Recursive Function</option>
+                      <option value="8">Loops</option>
+                      <option value="9">Array</option>
+                      <option value="10">String Operations</option>
+                      <option value="11">Static And Non Static Members</option>
+                      <option value="12">Access Specifiers</option>
+                      <option value="13">Constructors</option>
+                      <option value="14">Exception Handling</option>
+                      <option value="15">File Handling</option>
+                      <option value="16">Polumrphism</option>
+                      <option value="17">Inheritance</option>
+                      <option value="18">Encapsulation</option>
+                      <option value="19">MultiThreading</option>
+                      <option value="20">Collections And Generics</option>
+                      <option value="21">Boxing And UnBoxing</option>
+                      <option value="505">Classes, Methods &amp; Objects</option>
+                      <option value="506">Interfaces &amp; packages</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label>Program Scenario</label>
+                    <textarea id="txtscenario" class="form-control"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label>Program </label>
+                    <textarea id="txtprogram" class="form-control"></textarea>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="panel-footer">
+                <input type="button" value="Submit" id="btnsubmit" class="btn btn-primary" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+      $("#btnsubmit").click(function () {
+        alert("Program added successfully");
+      })
+    })
+  </script>
+</body>
+
+</html>
